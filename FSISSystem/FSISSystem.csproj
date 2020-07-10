@@ -52,6 +52,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\GuardianController.cs" />
+    <Compile Include="BLL\PlayerController.cs" />
     <Compile Include="BLL\TeamController.cs" />
     <Compile Include="DAL\FSISContext.cs" />
     <Compile Include="ENTITIES\Guardian.cs" />

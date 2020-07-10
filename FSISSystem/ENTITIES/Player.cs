@@ -20,8 +20,51 @@ namespace FSISSystem.ENTITIES
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }
-        public string Gender { get; set; }
+
+        private string _Gender;
+
+        public string Gender//ToUpper
+        {
+            get
+            {
+                return _Gender;
+            }
+            set
+            {
+                _Gender = value.ToUpper();
+
+            }
+        }
         public string AlbertaHealthCareNumber { get; set; }
-        public string MedicalAlertDetails { get; set; }//Nullable
+
+        private string _MedicalAlertDetails;
+
+        public string MedicalAlertDetails
+        {
+            get
+            {
+                return _MedicalAlertDetails;
+            }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    _MedicalAlertDetails = null;
+                }
+                else
+                {
+                    _MedicalAlertDetails = value;
+                }
+            }
+        }
+
+        [NotMapped]
+        public string FullName
+        {
+            get
+            {
+                return LastName + ", " + FirstName;
+            }
+        }
     }
 }

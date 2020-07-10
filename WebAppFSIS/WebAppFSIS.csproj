@@ -118,8 +118,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="ExercisePages\EntityQueryCRUD.aspx" />
     <Content Include="ExercisePages\ExerciseHome.aspx" />
+    <Content Include="ExercisePages\MultipleRecordQuery.aspx" />
+    <Content Include="ExercisePages\MultipleRecordQueryODS.aspx" />
     <Content Include="ExercisePages\SimpleQuery.aspx" />
+    <Content Include="ExercisePages\WebForm1.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -284,6 +288,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExercisePages\EntityQueryCRUD.aspx.cs">
+      <DependentUpon>EntityQueryCRUD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExercisePages\EntityQueryCRUD.aspx.designer.cs">
+      <DependentUpon>EntityQueryCRUD.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExercisePages\ExerciseHome.aspx.cs">
       <DependentUpon>ExerciseHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -291,12 +302,33 @@
     <Compile Include="ExercisePages\ExerciseHome.aspx.designer.cs">
       <DependentUpon>ExerciseHome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ExercisePages\MultipleRecordQuery.aspx.cs">
+      <DependentUpon>MultipleRecordQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExercisePages\MultipleRecordQuery.aspx.designer.cs">
+      <DependentUpon>MultipleRecordQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExercisePages\MultipleRecordQueryODS.aspx.cs">
+      <DependentUpon>MultipleRecordQueryODS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExercisePages\MultipleRecordQueryODS.aspx.designer.cs">
+      <DependentUpon>MultipleRecordQueryODS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ExercisePages\SimpleQuery.aspx.cs">
       <DependentUpon>SimpleQuery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ExercisePages\SimpleQuery.aspx.designer.cs">
       <DependentUpon>SimpleQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExercisePages\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExercisePages\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

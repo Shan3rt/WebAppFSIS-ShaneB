@@ -19,5 +19,14 @@ namespace FSISSystem.ENTITIES
         public string LastName { get; set; }
         public string EmergencyPhoneNumber { get; set; }
         public string EmailAddress { get; set; }
+
+        [NotMapped]
+        public string FullName
+        {
+            get
+            {
+                return LastName + ", " + FirstName;
+            }
+        }
     }
 }
